@@ -7,6 +7,8 @@ class ChildList extends Component {
     return (
       <>
         I am a Childlist.
+
+        {this.props.name}
       </>
     )
   }
