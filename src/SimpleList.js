@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react'
 import Days from './Days';
+import Dropdown from './Dropdown';
 
 class SimpleList extends Component
 {
@@ -13,6 +14,7 @@ class SimpleList extends Component
         return (
             <>
                 <Days days={days}/>
+                <Dropdown days={days}/>
             </>
         )
     }

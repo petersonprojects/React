@@ -1,24 +1,25 @@
 
 import React, { Component } from 'react'
 
-class Days extends Component
+class Dropdown extends Component
 {
 
     render()
     {
 
         let days = this.props.days.map(day => {
-            return <li>{day}</li>;
+            return <option>{day}</option>;
         });
 
         return (
             <>
-                <ul>
+                <select>
+                    <option>Select a day</option>
                     {days}
-                </ul>
+                </select>
             </>
         )
     }
 }
 
-export default Days
+export default Dropdown

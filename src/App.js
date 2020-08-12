@@ -1,11 +1,11 @@
 import React from 'react';
-import SimpleList from './SimpleList';
+import Cards from './cards/Cards'
 
 
 const App = () => {
   return (
     <>
-      <SimpleList />
+      <Cards />
     </>
   )
 }
