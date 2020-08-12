@@ -1,17 +1,24 @@
 
 import React, { Component } from 'react'
 
-class ChildList extends Component {
+class ChildList extends Component 
+{
 
-  render() {
-    return (
-      <>
-        I am a Childlist.
+    render() 
+    {
+        let names = this.props.array.map(name => {
+            return <h2>{name}</h2>;
+        });
+        
+        return (
+            <>
+                I am a Childlist.
 
-        {this.props.name}
-      </>
-    )
-  }
+                {names}
+
+            </>
+        )
+    }
 }
 
 export default ChildList

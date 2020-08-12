@@ -1,14 +1,11 @@
 import React from 'react';
-// import Parent from './Ex1/Parent';
-import List from './List';
-import './App.css';
+import SimpleList from './SimpleList';
 
-//as an object {firstName: "micah"}
 
 const App = () => {
   return (
     <>
-      <List />
+      <SimpleList />
     </>
   )
 }
