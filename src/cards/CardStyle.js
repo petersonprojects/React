@@ -21,6 +21,7 @@ const cardStyle = (props) => {
             </Col>
         </>
     )
+    
 }
 
 export default cardStyle

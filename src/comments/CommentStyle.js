@@ -1,5 +1,6 @@
 import React from 'react';
 import {Media} from 'react-bootstrap';
+import './styles.css'
 
 const CommentStyle = (props) => {
     
@@ -14,8 +15,8 @@ const CommentStyle = (props) => {
                 alt="Generic placeholder"
             />
             <Media.Body>
-                <h5>{props.name}</h5>
-                <p>
+                <h5 className="myStyle2">{props.name}</h5>
+                <p className="myStyle3">
                     {props.description}
                 </p>
             </Media.Body>

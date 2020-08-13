@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import CommentStyle from './CommentStyle';
 import data from './commentData';
 
+
 class Comments extends Component
 {
 
