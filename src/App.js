@@ -1,11 +1,11 @@
 import React from 'react';
-import Cards from './cards/Cards'
+import Comments from './comments/Comments';
 
 
 const App = () => {
   return (
     <>
-      <Cards />
+      <Comments />
     </>
   )
 }

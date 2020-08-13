@@ -1,27 +1,21 @@
-
-import React, { Component } from 'react';
 import CardStyle from './CardStyle';
-import {Row} from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import React, { Component } from 'react';
 import data from './cardData';
 
 class Cards extends Component {
-    
+
     render() {
 
-        let data = this.props.data.map(data =>{
-            return{
-                
-            }
+        let cardsArray = data.map(card => {
+
+            return <CardStyle buttonText={card.buttonText} text={card.text} title={card.title}/>
         });
 
         return (
             <>
                 <Row>
-                    <CardStyle title={data.title} text={data.text} buttonText={data.buttonText}/>
-                    <CardStyle/>
-                    <CardStyle/>
-                    <CardStyle/>
-                    <CardStyle/>
+                    {cardsArray}
                 </Row>
             </>
         )
